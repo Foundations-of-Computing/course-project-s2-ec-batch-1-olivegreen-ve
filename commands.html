@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olivegreen+ve</title>
+    <style>
+        body {
+            background-image: url('green.jpeg');
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 50px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("fade-out");
+    });
+    
+    document.querySelectorAll(".menu a").forEach(link => {  // Fixed selector
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default navigation
+    
+            let href = this.getAttribute("href");
+    
+            document.body.classList.add("fade-out");
+    
+            setTimeout(() => {
+                window.location.href = href; // Navigate after fade effect
+            }, 500); // Delay should match the CSS transition time
+        });
+    });
+    
+    window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out"); // Fix for back button flicker
+    });
+    
+</script>
+<body>
+    <div class="icon">
+        <h2 class="logo">Olivegreen+ve</h2>
+    </div>
+    
+    <div class="main">
+        <div class="navbar">
+           
+
+            <div class="menu">
+                <ul style="white-space: nowrap;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="commands.html">COMMANDS</a></li>
+                    <li><a href="wars fought.html">WARS-FOUGHT</a></li>
+                    
+                    <li><a href="rank structure.html">RANK STRUCTURE</a></li>
+                    <li><a href="weapons.html">WEAPONS</a></li>
+                    <li><a href="special force.html">THE SPECIAL FORCE</a></li>
+                    
+                </ul>
+            </div>
+           
+        </div>
+</body>
+<body>
+    <div id="commands" class="section">
+        <h2>COMMANDS</h2>
+        <h4>Indian Army</h4>
+        <p>The Indian Army operates under several commands, each responsible for a specific geographical region or function.</p>
+        <ul>
+           
+            <li>Northern Command: Udhampur, Jammu & Kashmir</li>
+            <li>Southern Command: Pune, Maharashtra</li>
+            <li>Eastern Command: Kolkata, West Bengal</li>
+            <li>Western Command: Chandimandir, Haryana</li>
+            
+            <li>South-Western Command: Jaipur, Rajasthan</li>
+            <li>Army Training Command (ARTRAC): Shimla, Himachal Pradesh</li>
+         <h4>Indian air force</h4>  
+         <p>The Indian Air Force (IAF) has seven commands: five operational (Western, Eastern, Central, Southern, and South Western) <br>and two functional (Training and Maintenance), each headed by an Air Officer Commanding-in-Chief (AOC-in-C) with the rank of Air Marshal. </p> 
+            
+           
+            <li>Central Air Command (CAC) – Prayagraj (Allahabad), Uttar Pradesh</li>
+            <li>Eastern Air Command (EAC) – Shillong, Meghalaya</li>
+            <li>Western Air Command (WAC) – New Delhi</li>
+            <li>Southern Air Command (SAC) – Thiruvananthapuram, Kerala</li>
+            <li>South Western Air Command (SWAC) – Gandhinagar, Gujarat</li>
+            <li>Training Command – Bengaluru, Karnataka</li>
+            <li>Maintenance Command – Nagpur, Maharashtra</li>
+            
+         <h4>Indian Navy</h4>  
+         <p>The Indian Navy operates through three main commands, each responsible for different maritime regions:</p> 
+         <li>Western Naval Command (WNC) – Mumbai, Maharashtra</li>
+         <li>Eastern Naval Command (ENC) – Visakhapatnam, Andhra Pradesh</li>
+         <li>Southern Naval Command (SNC) – Kochi, Kerala</li>
+        </ul>
+        
+    </div>
+</body>

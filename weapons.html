@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olivegreen+ve</title>
+    <style>
+        body {
+            background-image: url('green.jpeg');
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 50px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("fade-out");
+    });
+    
+    document.querySelectorAll(".menu a").forEach(link => {  // Fixed selector
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default navigation
+    
+            let href = this.getAttribute("href");
+    
+            document.body.classList.add("fade-out");
+    
+            setTimeout(() => {
+                window.location.href = href; // Navigate after fade effect
+            }, 500); // Delay should match the CSS transition time
+        });
+    });
+    
+    window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out"); // Fix for back button flicker
+    });
+    
+</script>
+<body>
+    <div class="icon">
+        <h2 class="logo">Olivegreen+ve</h2>
+    </div>
+    
+    <div class="main">
+        <div class="navbar">
+           
+
+            <div class="menu">
+                <ul style="white-space: nowrap;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="commands.html">COMMANDS</a></li>
+                    <li><a href="wars fought.html">WARS-FOUGHT</a></li>
+                    
+                    <li><a href="rank structure.html">RANK STRUCTURE</a></li>
+                    <li><a href="weapons.html">WEAPONS</a></li>
+                    <li><a href="special force.html">THE SPECIAL FORCE</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+</body>
+<body>
+    <div id="weapons" class="section">
+        <h2>WEAPONS</h2>
+        <p>India's defense forces are equipped with advanced weaponry and to mention soldiers are the best weapons a counry can have</p>
+        <ul>
+            <h4>Weapons Used by the Indian Army</h4> 
+            <h6>Small Arms (Personal Weapons)</h6> 
+            <li>Assault Rifles: INSAS Rifle, AK-203, SIG Sauer 716</li>
+            <li>Sniper Rifles: Dragunov SVD, Barrett M82, IMI Galil</li>
+            <li>Pistols & Handguns: Glock 17, Beretta 92, Pistol Auto 9mm</li>
+            <li>Machine Guns: Negev NG7, PKM, MG42</li>
+            <h6>Artillery</h6>
+            <li>Towed Howitzers: Bofors FH77, Dhanush Howitzer</li>
+            <li>Self-Propelled Artillery: K9 Vajra-T, M777 Ultra-Light Howitzer</li>
+            <li>Rocket Systems: Pinaka Multi-Barrel Rocket Launcher, BM-21 Grad</li>
+            <h6>Armored Vehicles & Tanks</h6>
+            <li>Main Battle Tanks (MBTs): Arjun Mk-1A, T-90 Bhishma, T-72 Ajeya</li>
+            <li>Infantry Fighting Vehicles (IFVs): BMP-2 Sarath</li>
+            <li>Armored Personnel Carriers (APCs): Tata Kestrel, Casspir</li>
+            <h6>Air Defence Systems</h6>
+            <li>Missile Systems: Akash Missile System, Spyder Air Defence System</li>
+            <li>Anti-Aircraft Guns: L-70, ZU-23-2</li>
+            <h6>Missiles & Rockets</h6>
+            <li>Ballistic Missiles: Agni series, Prithvi series </li>
+            <li>Cruise Missiles: BrahMos, Nirbhay</li>
+            <li>Anti-Tank Guided Missiles (ATGMs): Nag Missile, Milan-2T</li>
+            <h6>Drones & UAVs</h6>
+            <li>Surveillance Drones: Heron, Searcher Mk II</li>
+            <li>Combat Drones: Predator MQ-9B (under acquisition)</li>
+            <h6> Specialized Equipment</h6>
+            <li>Combat Helicopters: HAL Rudra</li>
+            <li>Radars & Electronic Warfare: Swathi Weapon Locating Radar, Rohini Radar</li>
+            <h4>Weapons and Aircraft Used by The Indian Air Force (IAF)</h4>
+            <h6></h6>
+            <li></li>
+            <h6>1.Fighter Aircraft</h6>
+            <li>Multirole Fighters: Dassault Rafale, Sukhoi Su-30MKI, HAL Tejas Mk-1, Mirage 2000</li>
+            <li>Air Superiority Fighters: MiG-29UPG</li>
+            <li>Ground Attack Aircraft: SEPECAT Jaguar</li>
+            <li>Interceptor Fighters: MiG-21 Bison (being phased out)</li>
+            <h6>2.Transport Aircraft</h6>
+            <li>Strategic Transport: Boeing C-17 Globemaster III, Ilyushin Il-76</li>
+            <li>Tactical Transport: C-130J Super Hercules, Antonov An-32</li>
+            <li>Utility Aircraft: Dornier Do-228, Boeing 737 (for VIP transport)</li>
+            <h6>3.Aerial Refueling & AWACS</h6>
+            <li>Airborne Early Warning and Control (AEW&C): DRDO Netra, Beriev A-50EI</li>
+            <li>Aerial Refueling Tankers: Ilyushin Il-78MKI</li>
+            <h6>4.Helicopters</h6>
+            <li>Attack Helicopters: Boeing AH-64E Apache, HAL Rudra</li>
+            <li>Transport & Utility Helicopters: HAL Dhruv, Mi-17V-5, Mi-26, Chetak, Cheetah</li>
+            <li>Heavy Lift Helicopters: CH-47F Chinook</li>
+            <h6>5.Drones & UAVs</h6>
+            <li>Surveillance UAVs: Heron, Searcher Mk-II</li>
+            <li>Combat UAVs (Upcoming): Predator MQ-9B Reaper (to be acquired), Archer-NG</li>
+            <h6>6.Missile Systems</h6>
+            <li>Air-to-Air Missiles (AAMs):
+
+                Short-Range: R-73, Python-5, Astra Mk-1
+                
+                Medium/Long-Range: Meteor, MICA, R-77, Astra Mk-2 (under development)</li>
+            <li>Air-to-Surface Missiles (ASMs):
+
+                BrahMos-A (air-launched version)
+                
+                Spice-2000 (used in Balakot airstrike)
+                
+                DRDO Smart Anti-Airfield Weapon (SAAW)</li>
+            <li>Anti-Radiation Missiles (ARMs):
+
+                Rudram-1 (under testing)</li>
+            
+            <h6>Air Defence & Radar Systems</h6>
+            <li>Surface-to-Air Missiles (SAMs):
+
+                Akash Missile System, SPYDER, Barak-8</li>
+            <li>Ballistic Missile Defence (BMD):
+
+                Prithvi Air Defence (PAD), Advanced Air Defence (AAD)</li>
+            <li>Radar Systems:
+
+                Rohini Radar, Indra Radar, EL/M-2083 AEW radar</li>
+            <h4>Indian Navy Fleets & Warships </h4>
+            <h6>1.Fleets and Vessels:</h6> 
+            <h6>Aircraft Carriers</h6>   
+            <li>INS Vikrant: India's first domestically-built aircraft carrier, commissioned in 2022</li>
+            <li>INS Vikramaditya: A modified Kiev-class aircraft carrier serving as the flagship of the Indian Navy.</li>
+            <h6>Destroyers:</h6>
+            <li>Visakhapatnam-class (Project 15B):
+
+                INS Visakhapatnam: Commissioned in 2021.
+                
+                INS Mormugao: Commissioned in 2022.
+                
+                INS Imphal: Commissioned in 2023.
+                
+                INS Surat: Commissioned on January 15, 2025</li>
+            
+            <li></li>
+            <h6>Frigates</h6>    
+            <li>Nilgiri-class (Project 17A):
+
+                INS Nilgiri: Commissioned on January 15, 2025.
+                
+                INS Himgiri: Expected delivery in Q2 of FY2025-26.
+                
+                INS Udaygiri: Potential delivery by end of FY2024-25.
+                
+                INS Dunagiri: Under construction.</li>
+            <li>Talwar-class (Follow-on):
+
+                INS Tushil: Commissioned on December 9, 2024.
+                
+                Additional units: Two under construction at Goa Shipyard Limited (GSL) with expected deliveries in 2026 and 2027.</li>
+            
+            <h6>Submarines:</h6>
+            <li>Kalvari-class (Scorpene):
+
+                INS Kalvari: Commissioned in 2017.
+                
+                INS Khanderi: Commissioned in 2019.
+                
+                INS Karanj: Commissioned in 2021.
+                
+                INS Vela: Commissioned in 2021.
+                
+                INS Vagir: Commissioned in 2022.
+                
+                INS Vagsheer: Delivered on January 9, 2025, and commissioned on January 15, 2025</li>
+            <h6>Corvettes:</h6>
+            <li>Kamorta-class (Project 28): Four units commissioned between 2014 and 2020.</li>
+            <h6>Survey Vessels:</h6>
+            <li>INS Sandhayak: Delivered in December 2023.
+
+                INS Nirdeshak: Expected delivery in late August or early September 2025.
+                
+                INS Ikshak and INS Sanshodhak: Scheduled for delivery in March and June 2025, respectively.</li>
+            <h6>2.Weapon Systems</h6> 
+            <h6>Missiles:</h6>
+            <li>BrahMos Supersonic Cruise Missiles: Integrated into various platforms, including destroyers and frigates, enhancing strike capabilities.</li>
+
+            <li>Barak-8 Surface-to-Air Missiles: Deployed on multiple vessels for robust air defense.</li>
+            <li>Hypersonic Missiles: Successfully tested, capable of carrying payloads over 1,500 km at speeds exceeding Mach 5. </li>
+            <h6>Naval guns and close in weapos systems:</h6>
+            <li>76mm Super Rapid Gun Mount (SRGM)</li>
+            <li>AK-630M CIWS: Installed on various vessels for point defense against aerial threats.</li>
+            <h6>Torpedoes and Anti-Submarine Warfare (ASW) Systems:</h6> 
+            <li>L&T Indigenous Rocket Launchers: Deployed for ASW operations</li>
+            <li>Wire-guided Torpedoes and Exocet Anti-ship Missiles: Arming submarines like the INS Vagsheer.</li>
+            <li></li>
+
+            
+
+        </ul>
+        
+    </div>
+</body>

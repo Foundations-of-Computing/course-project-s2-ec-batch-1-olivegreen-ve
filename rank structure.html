@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olivegreen+ve</title>
+    <style>
+        body {
+            background-image: url('green.jpeg');
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 50px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("fade-out");
+    });
+    
+    document.querySelectorAll(".menu a").forEach(link => {  // Fixed selector
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default navigation
+    
+            let href = this.getAttribute("href");
+    
+            document.body.classList.add("fade-out");
+    
+            setTimeout(() => {
+                window.location.href = href; // Navigate after fade effect
+            }, 500); // Delay should match the CSS transition time
+        });
+    });
+    
+    window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out"); // Fix for back button flicker
+    });
+    
+</script>
+<body>
+    <div class="icon">
+        <h2 class="logo">Olivegreen+ve</h2>
+    </div>
+    <div class="main">
+        <div class="navbar">
+           
+
+            <div class="menu">
+                <ul style="white-space: nowrap;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="commands.html">COMMANDS</a></li>
+                    <li><a href="wars fought.html">WARS-FOUGHT</a></li>
+                    
+                    <li><a href="rank structure.html">RANK STRUCTURE</a></li>
+                    <li><a href="weapons.html">WEAPONS</a></li>
+                    <li><a href="special force.html">THE SPECIAL FORCE</a></li>
+                    
+                </ul>
+            </div>
+            
+            
+        </div>
+</body>
+<body>
+    <div id="rank structure" class="section">
+        
+        
+        <ul>
+            <h2>Equivalent rank structure of officers in the three armed forces</h2>
+            <img src="rank.png" alt="para">
+    </ul>
+    </div>        
+</body>

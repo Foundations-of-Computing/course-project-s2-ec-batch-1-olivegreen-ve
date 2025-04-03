@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olivegreen+ve</title>
+    <style>
+        body {
+            background-image: url('green.jpeg');
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 50px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("fade-out");
+    });
+    
+    document.querySelectorAll(".menu a").forEach(link => {  // Fixed selector
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default navigation
+    
+            let href = this.getAttribute("href");
+    
+            document.body.classList.add("fade-out");
+    
+            setTimeout(() => {
+                window.location.href = href; // Navigate after fade effect
+            }, 500); // Delay should match the CSS transition time
+        });
+    });
+    
+    window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out"); // Fix for back button flicker
+    });
+    
+</script>
+<body>
+   
+    <div class="icon">
+        <h2 class="logo">Olivegreen+ve</h2>
+    </div>
+    <div class="main">
+        <div class="navbar">
+           
+
+            <div class="menu">
+                <ul style="white-space: nowrap;">
+                    
+                    <li><a href="commands.html">COMMANDS</a></li>
+                    <li><a href="wars fought.html">WARS-FOUGHT</a></li>
+                    
+                    <li><a href="rank structure.html">RANK STRUCTURE</a></li>
+                    <li><a href="weapons.html">WEAPONS</a></li>
+                    <li><a href="special force.html">THE SPECIAL FORCE</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="content">
+            <h1>A site for  Indian Defence Forces</h1>
+            <p class="par">
+                The Indian Defence Forces, comprising the Indian Army, Navy, and Air Force, stand as a pillar of strength,<br> safeguarding the nation’s sovereignty and security. Known for their valor, discipline, and technological<br> advancements, they play a crucial role in maintaining peace, handling internal security, and providing<br> humanitarian aid during disasters. With a legacy of bravery in wars, counterterrorism operations, and <br>UN peacekeeping missions, the Indian military continues to evolve with modernization efforts and <br>strategic alliances. Their unwavering dedication and sacrifices ensure the safety and integrity of the <br>nation, making them a source of immense pride for every Indian
+            </p>
+            <p class="q">-Service before self, courage beyond fear, and duty above all.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="Screenshot (68).png" alt="Indian Armed Forces">
+        </div>
+
+        
+        
+        
+        <div id="tri-service" class="section">
+            <h2>TRI-SERVICE</h2>
+            <li>The Indian Armed Forces consist of three main branches: the Indian Army, Indian Navy, and Indian Air Force, collectively known as the Tri-Services. The Indian Army is responsible for land-based operations, protecting the country’s borders and maintaining internal security. The Indian Navy safeguards India's maritime interests, ensuring security in the Indian Ocean region and conducting naval operations. The Indian Air Force provides aerial defense, strategic bombing, and air support to ground and naval forces. These three services operate under the Ministry of Defence and are led by their respective chiefs, with overall coordination handled by the Chief of Defence Staff (CDS). The Integrated Defence Staff (IDS) ensures joint operations and synergy among the forces, enhancing India's military preparedness and response capabilities.</li>
+        </div>
+    
+        
+        
+        
+       
+    
+    
+</body>
+</html>
+

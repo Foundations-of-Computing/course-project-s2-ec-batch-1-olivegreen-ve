@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olivegreen+ve</title>
+    <style>
+        body {
+            background-image: url('green.jpeg');
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 50px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("fade-out");
+    });
+    
+    document.querySelectorAll(".menu a").forEach(link => {  // Fixed selector
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default navigation
+    
+            let href = this.getAttribute("href");
+    
+            document.body.classList.add("fade-out");
+    
+            setTimeout(() => {
+                window.location.href = href; // Navigate after fade effect
+            }, 500); // Delay should match the CSS transition time
+        });
+    });
+    
+    window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out"); // Fix for back button flicker
+    });
+    
+</script>
+<body>
+    <div class="icon">
+        <h2 class="logo">Olivegreen+ve</h2>
+    </div>
+    <div class="main">
+        <div class="navbar">
+            
+
+            <div class="menu">
+                <ul style="white-space: nowrap;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="commands.html">COMMANDS</a></li>
+                    <li><a href="wars fought.html">WARS-FOUGHT</a></li>
+                   
+                    <li><a href="rank structure.html">RANK STRUCTURE</a></li>
+                    <li><a href="weapons.html">WEAPONS</a></li>
+                    <li><a href="special force.html">THE SPECIAL FORCE</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+</body>
+<body>
+    <div id="special-force" class="section">
+        <h2>THE SPECIAL FORCE</h2>
+        <p>Indian Special Forces are elite military units specializing in counter-terrorism, covert operations, and high-risk missions. Key units include the MARCOS (Marine Commandos) for naval warfare, NSG (National Security Guard) for counter-terrorism, Para SF for airborne and surgical strikes, and GARUD Commando Force for air force special operations.India has elite special forces such as:</p>
+        <ul>
+            <h4>Para SF (Army)</h4>
+            <img src="para.jpeg" alt="para">
+            <li>Established: 1966 (Raising Day - July 1)</li>
+            <h6>Mode of Operation:</h6>
+            <li> Parachute-inserted, high-altitude warfare specialists, known for deep-penetration strikes, hostage rescues, and urban warfare. Operate in extreme conditions such as mountains, jungles, and deserts.</li>
+            <h6>Weapons Used:</h6>
+            <li> Tavor TAR-21 </li>
+            <li>SIG Sauer SG 716</li>
+            <li>AK-47 variants</li>
+            <li>M4 Carbine</li>
+            <li>heckler and koch 416,</li>
+            <li>Barrett M82 sniper rifle</li>
+            
+            
+            <h6>Main Tasks:</h6>
+            <li>Surgical strikes and behind-enemy-lines operations</li>
+            <li>Counter-insurgency and counter-terrorism</li>
+            <li>High-altitude warfare (especially in Kashmir and Northeast India)</li>
+            <li>Hostage rescue and urban warfare</li>
+            <h4>MARCOS (Marine Commandos - Navy)</h4>
+            <img src="marcos.jpeg" alt="para">
+            <li>Established: 1987 (Raising Day -  februaury 14)</li>
+            <h6>Mode of Operation:</h6>
+            <li>Underwater Scuba/SEAL Operations
+
+            </li>
+            <li>Rapid Boat Insertion & Extraction</li>
+            <li>Coastal & Riverine Ambush Tactics
+
+            </li>
+            <li>Heliborne Assault & Combat Diving</li>
+            <li></li>
+            <h6>Weapons Used:</h6>
+            <li>IWI Tavor TAR-21
+
+            </li>
+            <li>Glock 17 & 19 Pistols</li>
+            <li>Franchi SPAS-15 Shotgun</li>
+            <li>Heckler & Koch MP5</li>
+            <li>DRDO T-91 Underwater Rifle</li>
+            <h6>Main Tasks:</h6>
+            <li>Maritime Sabotage & Underwater Warfare</li>
+            <li>Anti-Piracy & Shipboarding Operations</li>
+            <li>Hostage Rescue (Sea-Based)</li>
+            <li>Special Reconnaissance for Naval Targets</li>
+            <li>Riverine & Coastal Counter-Terrorism</li>
+            <li></li>
+            <h4>Garud Commando Force (Air Force)</h4>
+            <img src="garud (2).jpeg" alt="para">
+            <li>Established: 2004(Raising Day - 6 february )</li>
+            <h6>Mode of Operation:</h6>
+            <li>Airborne Rapid Deployment</li>
+            <li>Base Protection & UAV Reconnaissance</li>
+            <li>Fast-Roping & Heliborne Assaults</li>
+            <li>Night Combat & Thermal Optics
+
+            </li>
+            <li></li>
+            <h6>Weapons Used:</h6>
+            <li>Tavor TAR-21 & X95 Rifles</li>
+            <li>MP5 Submachine Gun</li>
+            <li>Beretta 92FS & Glock 17 Pistols</li>
+            <li>SVD Dragunov Sniper Rifle</li>
+            <li></li>
+            <li></li>
+            <h6>Main Tasks:</h6>
+            <li>Airfield & Base Security</li>
+            <li>Anti-Hijacking Operations</li>
+            <li>Deep Reconnaissance for Airstrikes</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            
+            <h4>NSG - National Security Guard</h4>
+            <img src="nsg.jpeg" alt="para">
+            <li>Established: 1984 (Raising Day - 16 october)</li>
+            <h6>Mode of Operation:</h6>
+            <li>Close-Quarter Battle (CQB) Tactics</li>
+            <li>Rapid Building/Vehicle Entry (Breaching)</li>
+            <li>SWAT-Style Urban Intervention</li>
+            <li>Covert High-Precision Strikes</li>
+            <li></li>
+            <h6>Weapons Used:</h6>
+            <li>SIG MPX & MP5 Submachine Guns</li>
+            <li>CornerShot Weapon System</li>
+            <li>Glock 17, 19 & SIG P226 Pistols</li>
+            <li>Remington 700 Sniper Rifle</li>
+            <li></li>
+            <h6>Main Tasks:</h6>
+            <li>Hostage Rescue & Anti-Terrorism</li>
+            <li>Counter-IED & Bomb Disposal</li>
+            <li>VIP Security (SPG Integration)</li>
+            <li>High-Value Target Neutralization</li>
+            <li></li>
+        </ul>
+    </div>
+    
+</div>
+
+        
+</body>

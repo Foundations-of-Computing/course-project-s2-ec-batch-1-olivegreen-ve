@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olivegreen+ve</title>
+    <style>
+        body {
+            background-image: url('green.jpeg');
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 50px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("fade-out");
+    });
+    
+    document.querySelectorAll(".menu a").forEach(link => {  // Fixed selector
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent default navigation
+    
+            let href = this.getAttribute("href");
+    
+            document.body.classList.add("fade-out");
+    
+            setTimeout(() => {
+                window.location.href = href; // Navigate after fade effect
+            }, 500); // Delay should match the CSS transition time
+        });
+    });
+    
+    window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out"); // Fix for back button flicker
+    });
+    
+</script>
+<body>
+    <div class="icon">
+        <h2 class="logo">Olivegreen+ve</h2>
+    </div>
+    
+    <div class="main">
+        <div class="navbar">
+           
+
+            <div class="menu">
+                <ul style="white-space: nowrap;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="commands.html">COMMANDS</a></li>
+                    <li><a href="wars fought.html">WARS-FOUGHT</a></li>
+                    
+                    <li><a href="rank structure.html">RANK STRUCTURE</a></li>
+                    <li><a href="weapons.html">WEAPONS</a></li>
+                    <li><a href="special force.html">THE SPECIAL FORCE</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+</body>
+<body>
+    <div id="wars-fought" class="section">
+        <h2>WARS-FOUGHT</h2>
+        <p>The Indian Defence Forces (Army, Navy, and Air Force) have fought several wars and military conflicts since independence including:</p>
+        <ul>
+            <h5> Indo-Pakistani Wars</h5>
+            <li>1.1947-48 (First Kashmir War) – India and Pakistan fought over Jammu & Kashmir; resulted in the creation of the Line of Control (LoC).</li>
+            <li>2.1965 War – Triggered by Pakistan’s Operation Gibraltar; ended in a stalemate with the Tashkent Agreement.</li>
+            <li>3.1971 War (Bangladesh Liberation War) – India defeated Pakistan, leading to the creation of Bangladesh.</li>
+            <li>4.1999 Kargil War – Pakistan-backed forces infiltrated Kargil; India recaptured lost territory.</li>
+            <h5> Indo-China Wars</h5>
+            <li>1.1962 Sino-Indian War – A border conflict over Aksai Chin and Arunachal Pradesh; India suffered setbacks.</li>
+            <li>2.2020 Galwan Clash – Skirmishes in Ladakh with casualties on both sides; India strengthened border defences.</li>
+            <h5>Other  Operations</h5>
+            <li>1.Operation Meghdoot (1984) – India secured Siachen Glacier from Pakistan.</li>
+            <li>2.Operation Vijay (1961) – Liberated Goa, Daman & Diu from Portuguese rule.</li>
+            <li>3.IPKF (1987-1990, Sri Lanka) – India intervened in Sri Lanka’s civil war but later withdrew.</li>
+        </ul>
+        
+    </div>
+</body>
